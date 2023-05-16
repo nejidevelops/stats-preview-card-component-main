@@ -4,6 +4,31 @@
     box-sizing: border-box;
 }
 
+:root {
+    /* primary */
+    --very-dark-blue: hsl(233, 47%, 7%);
+    --dark-desaturated-blue: hsl(244, 38%, 16%);
+    --soft-violet: hsl(277, 64%, 61%);
+
+    /* Neutral */
+    --white: hsl(0, 0%, 100%);
+    --slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --slightly-transparent-white-stats: hsla(0, 0%, 100%, 0.6);
+
+}
+
+body {
+    background-color: var(--very-dark-blue);
+}
+
+.card {
+    background-color: var(--dark-desaturated-blue);
+}
+
+p {
+    color: var(--slightly-transparent-white);
+}
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
