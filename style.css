@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 15px;  
 }
 
 :root {
@@ -17,16 +20,58 @@
 
 }
 
-body {
+p {
+    color: var(--slightly-transparent-white);
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--very-dark-blue);
 }
 
+
 .card {
     background-color: var(--dark-desaturated-blue);
+    width: 60vw;
+    border-radius: 7px;
+    display: flex;
 }
 
-p {
+.card-content {
+    width: 50%;
+    padding: 4rem;
+}
+
+.card-content h1 {
+    font-size: 2.4rem;
+    color: var(--white);
+}
+
+.card-content h1 span {
+    font-size: inherit;
+    font-weight: inherit;
+    color: var(--soft-violet);
+}
+
+.card-content .card-content-paragraph {
     color: var(--slightly-transparent-white);
+    font-size: 1rem;
+    margin: 2rem 1rem 2rem 0;
+}
+
+.card-image {
+    width: 50%;
+    background: linear-gradient(
+        0deg,
+        hsla(277, 64%, 61%, 0.5) 0%,
+        hsla(277, 64%, 61%, 0.5) 100%
+    ), url(./images/image-header-desktop.jpg) center no-repeat;
+    background-size: cover;
+    border-radius: 0 7px 7px 0;
 }
 
 .attribution { 
@@ -36,4 +81,10 @@ p {
 
 .attribution a { 
     color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+    }
 }
