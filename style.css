@@ -74,6 +74,11 @@ p {
     border-radius: 0 7px 7px 0;
 }
 
+.stat-heading {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
